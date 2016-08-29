@@ -18,9 +18,71 @@
 	For image source listing see file: /stockphoto/stockphotosource.txt
 	Not all images listed were used.
 	-->
-</head>
-<body data-spy="scroll" data-target="#navbar-site">
+  <script src="html2canvas.js"></script>
 
+    <script>
+      function main()
+      {
+        html2canvas(document.body, {
+          onrendered: function (c)
+          {
+            canvas = c;
+            document.body.appendChild(canvas);
+            document.getElementById("real").style.visibility = "collapse";
+            canvas.style.left = "0px";
+            canvas.style.top = "0px";
+            canvas.style.position = "absolute";
+            getImageData();
+          }
+        });
+      }
+
+      var canvas;
+      var context;
+      var bars = [];
+      var barsize = 10;
+
+      function getImageData()
+      {
+        context = canvas.getContext("2d");
+        for (var i = 0; i < canvas.height / barsize; ++i)
+        {
+          bars[i] = context.getImageData(0, i * barsize, canvas.width, barsize);
+        }
+        setInterval(draw, 5000);
+      }
+
+      function draw()
+      {
+        document.getElementById("real").style.visibility = "collapse";
+        canvas.style.visibility = "visible";
+
+        context.fillStyle = "white";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        for (var i = 0; i < bars.length; i += 1)
+          context.putImageData(bars[i], 0 + (Math.random() * 50), i * barsize);
+
+        setTimeout(undraw, 100);
+      }
+
+      function undraw()
+      {
+        context.fillStyle = "white";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        for (var i = 0; i < bars.length; i += 1)
+          context.putImageData(bars[i], 0, i * barsize);
+
+        document.getElementById("real").style.visibility = "visible";
+        canvas.style.visibility = "collapse";
+      }
+    </script>
+
+</head>
+<body onload="main();" data-spy="scroll" data-target="#navbar-site">
+
+  <div id="real">
 	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" id="navbar-site">
 		<div class="container">
 			<div class="navbar-header" id="link-home">
@@ -681,7 +743,7 @@
 			</tr>
 		</table>
 	</div>
-
+  </div>
 	<!-- //////////////////////////////////////////////////////////////////// -->
 
 	<script src="js/jquery-3.1.0.min.js"></script>
