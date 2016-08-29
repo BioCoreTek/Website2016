@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide|VT323);
+body
+{
+	/* required for scrollspy */
+	position: relative;
+	padding-bottom: 0px;
+}
+.noselect
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.content
+{
+	margin-top: 50px;
+}
+/* fonts */
+.navbar-nav>li>a,
+h1,
+h3,
+.taglinecontainer
+{
+	font-family: Audiowide, monospace;
+}
+/* cancel font nested */
+h1 small
+{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.navbar
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navbar-brand
+{
+	padding: 10px;
+}
+.navbar-brand img
+{
+	width: 150px;
+	opacity: 0.9;
+}
+
+.section
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.section#home
+{
+	padding-top: 0px;
+}
+
+.thumbnail .caption h3
+{
+	font-size: 22px;
+}
+
+
+.footer
+{
+	height: 50px;
+	background-color: #ccc;
+	border: 0px;
+	border-top: 1px #eee solid;
+}
+.footer .container
+{
+}
+.footer .navbar-nav
+{
+	margin: 0px;
+}
+@media (min-width: 768px)
+{
+	.footer .container
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+.carousellogo
+{
+	background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 11%;
+	z-index: 300;
+	width: 50%;
+}
+
+.carousel img
+{
+	margin: 0 auto;
+}
+
+.taglinecontainer
+{
+    margin-top: 320px;
+    text-align: center;
+	padding: 3px;
+	width: 50%;
+	color: rgba(255,255,255,1);
+    margin-top: 24%;
+}
+.jumbotron
+{
+	margin-top: 35px;
+
+}
+.progress
+{
+	margin-bottom: 0px;
+}
+table
+{
+	margin-top: 15px;
+}
+
+label
+{
+  font-weight: normal;
+}
+.form-horizontal label
+{
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+input
+{
+  border: 1px #999 solid;
+  padding: 2px 4px;
+}
+input:active, input:focus, input:hover
+{
+  outline: none;
+  box-shadow: 3px 3px 5px #ddd;
+  border: 1px #999 solid;
+  color: #111;
+}
+
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus
+{
+	color: #fff;
+}
+
+
+
+/* result section */
+.summary
+{
+	margin-top: 0px;
+}
+.summary .thumbnail img
+{
+	width: 100%;
+}
+
+
+
+.redacted
+{
+	background-color: #000;
+	color: #333;
+}
+.redacted:hover
+{
+	background-color: #fff;
+	color: #000;
+}
+
+
+#results .nav>li>a
+{
+	padding: 10px;
+}
+
+/* ************************************************* */
+
+body.glitch
+{
+	background-color: #eef;
+}
+
+body.glitch .navbar-nav>li>a,
+body.glitch h1,
+body.glitch h3,
+body.glitch .taglinecontainer
+{
+	font-family: 'VT323', monospace;
+}
