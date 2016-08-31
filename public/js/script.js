@@ -90,65 +90,65 @@ function loadedImage(i)
 
 ///////////////////////////////////////////////////////////////////////////////
 
-	var canvas;
-	var context;
-	var bars = [];
-	var barsize = 10;
-	var realEl = $("#real");
-	var canvasEl = null;
-	var minTimeDraw = 500;
-	var maxTimeDraw = 6000;
-	var minTimeUndraw = 50;
-	var maxTimeundraw = 300;
+var canvas;
+var context;
+var bars = [];
+var barsize = 10;
+var realEl = $("#real");
+var canvasEl = null;
+var minTimeDraw = 500;
+var maxTimeDraw = 6000;
+var minTimeUndraw = 50;
+var maxTimeundraw = 300;
 
-	function runGlitching()
-	{
-		html2canvas(realEl, {
-			onrendered: function (c)
-			{
-				canvas = c;
-				$("body").append(canvas);
-				canvasEl = $("canvas");
-				getImageData();
-			}
-		});
-	}
-
-	function getImageData()
-	{
-		context = canvas.getContext("2d");
-		for (var i = 0; i < canvas.height / barsize; ++i)
+function runGlitching()
+{
+	html2canvas(realEl, {
+		onrendered: function (c)
 		{
-			bars[i] = context.getImageData(0, i * barsize, canvas.width, barsize);
+			canvas = c;
+			$("body").append(canvas);
+			canvasEl = $("canvas");
+			getImageData();
 		}
-		setInterval(draw, Math.random() * (maxTimeDraw - minTimeDraw) + minTimeDraw);
-	}
+	});
+}
 
-	function draw()
+function getImageData()
+{
+	context = canvas.getContext("2d");
+	for (var i = 0; i < canvas.height / barsize; ++i)
 	{
-		realEl.css('visibility', 'hidden');
-		canvasEl.css('visibility', 'visible');
-
-		context.fillStyle = "white";
-		context.fillRect(0, 0, canvas.width, canvas.height);
-
-		for (var i = 0; i < bars.length; i += 1)
-			context.putImageData(bars[i], 0 + (Math.random() * (50+50) -50), i * barsize);
-
-		setTimeout(undraw, Math.random() * (maxTimeundraw - minTimeUndraw) + minTimeUndraw);
+		bars[i] = context.getImageData(0, i * barsize, canvas.width, barsize);
 	}
+	setInterval(draw, Math.random() * (maxTimeDraw - minTimeDraw) + minTimeDraw);
+}
 
-	function undraw()
-	{
-		context.fillStyle = "white";
-		context.fillRect(0, 0, canvas.width, canvas.height);
+function draw()
+{
+	realEl.css('visibility', 'hidden');
+	canvasEl.css('visibility', 'visible');
 
-		for (var i = 0; i < bars.length; i += 1)
-			context.putImageData(bars[i], 0, i * barsize);
+	context.fillStyle = "white";
+	context.fillRect(0, 0, canvas.width, canvas.height);
 
-		canvasEl.css('visibility', 'hidden');
-		realEl.css('visibility', 'visible');
-	}
+	for (var i = 0; i < bars.length; i += 1)
+		context.putImageData(bars[i], 0 + (Math.random() * (50+50) -50), i * barsize);
+
+	setTimeout(undraw, Math.random() * (maxTimeundraw - minTimeUndraw) + minTimeUndraw);
+}
+
+function undraw()
+{
+	context.fillStyle = "white";
+	context.fillRect(0, 0, canvas.width, canvas.height);
+
+	for (var i = 0; i < bars.length; i += 1)
+		context.putImageData(bars[i], 0, i * barsize);
+
+	canvasEl.css('visibility', 'hidden');
+	realEl.css('visibility', 'visible');
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 
