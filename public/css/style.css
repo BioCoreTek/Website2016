@@ -14,10 +14,20 @@ body
 	-ms-user-select: none;
 	user-select: none;
 }
+
+canvas
+{
+	left: 0px;
+	top: -51px;
+	position: absolute;
+	visibility: hidden;
+}
+
 .content
 {
 	margin-top: 50px;
 }
+
 /* fonts */
 .navbar-nav>li>a,
 h1,
@@ -186,15 +196,3 @@ input:active, input:focus, input:hover
 
 /* ************************************************* */
 
-body.glitch
-{
-	background-color: #eef;
-}
-
-body.glitch .navbar-nav>li>a,
-body.glitch h1,
-body.glitch h3,
-body.glitch .taglinecontainer
-{
-	font-family: 'VT323', monospace;
-}
