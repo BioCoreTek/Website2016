@@ -96,8 +96,8 @@ var bars = [];
 var barsize = 10;
 var realEl = $("#real");
 var canvasEl = null;
-var minTimeDraw = 500;
-var maxTimeDraw = 6000;
+var minTimeDraw = 900;
+var maxTimeDraw = 9000;
 var minTimeUndraw = 50;
 var maxTimeundraw = 300;
 
