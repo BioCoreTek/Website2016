@@ -58,7 +58,7 @@ function init()
 	// preload other images
 	preloadImages();
 
-	getResults();
+	//getResults();
 }
 
 // run after images are loaded
