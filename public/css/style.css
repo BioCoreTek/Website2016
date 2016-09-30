@@ -4,6 +4,8 @@ body
 	/* required for scrollspy */
 	position: relative;
 	padding-bottom: 0px;
+	/* hide bottom scrollbar caused by canvas element */
+	overflow-x: hidden;
 }
 .noselect
 {
