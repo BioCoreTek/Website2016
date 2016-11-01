@@ -58,7 +58,7 @@ function init()
 	// preload other images
 	preloadImages();
 
-	//getResults();
+	getResults();
 }
 
 // run after images are loaded
@@ -96,10 +96,13 @@ var bars = [];
 var barsize = 10;
 var realEl = $("#real");
 var canvasEl = null;
-var minTimeDraw = 900;
+//var minTimeDraw = 900;
+// now that results are up, use much lower glitch rate so people can read it
+var minTimeDraw = 2000;
 var maxTimeDraw = 9000;
 var minTimeUndraw = 50;
 var maxTimeundraw = 300;
+
 
 function runGlitching()
 {
@@ -261,19 +264,27 @@ function processResults()
 		// make performance
 		var p = $("#templateperformancerow").find('tr').clone();
 		p.find('.name').html(results[i].name);
-		p.find('.gametime').html(results[i].gametime);
+		p.find('.timeremaining').html(results[i].timeremaining);
 
 		p.find('.percentage').attr('title', per+'% Completed')
 				.find('.progress-bar').attr('aria-valuenow', per)
 				.css('width', per+'%');
 
-		performance.push({'percentage': per, 'obj': p});
+		performance.push({'percentage': per, 'obj': p, 'timeremaining': results[i].timeremaining});
 	}
 
 	performance.sort(function(a, b) {
 		if (a.percentage < b.percentage)
 			return 1;
 		if (a.percentage > b.percentage)
+			return -1;
+		console.log(a, b);
+		// if percentages are the same
+		var at = a.timeremaining.substring(0, 2) + '' + a.timeremaining.substring(2, 2);
+		var bt = b.timeremaining.substring(0, 2) + '' + b.timeremaining.substring(2, 2);
+		if (at < bt)
+			return 1;
+		if (at > bt)
 			return -1;
 		return 0;
 	});

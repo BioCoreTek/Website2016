@@ -1,0 +1,279 @@
+{
+"fields": [
+	{
+		"name": "oxygen",
+		"display": "Oxygen Bypass",
+		"multiplier": 10,
+		"max": 10,
+		"bonus": false
+	},
+	{
+		"name": "hatchcode",
+		"display": "Find Outer Hatch Code",
+		"multiplier": 5,
+		"max": 5,
+		"bonus": false
+	},
+	{
+		"name": "openhatch",
+		"display": "Open Outer Hatch",
+		"multiplier": 5,
+		"max": 5,
+		"bonus": false
+	},
+	{
+		"name": "communicationlink",
+		"display": "Establish Communications Link",
+		"multiplier": 10,
+		"max": 10,
+		"bonus": false
+	},
+	{
+		"name": "pigpencode",
+		"display": "Find Pigpen Key Code",
+		"multiplier": 5,
+		"max": 5,
+		"bonus": false
+	},
+	{
+		"name": "decodepigpen",
+		"display": "Decode Pigpen",
+		"multiplier": 10,
+		"max": 10,
+		"bonus": false
+	},
+	{
+		"name": "reenableshields",
+		"display": "Re-Enable Shields",
+		"multiplier": 10,
+		"max": 10,
+		"bonus": false
+	},
+	{
+		"name": "accesscoreprocessorkey",
+		"display": "Access Core Processor Key",
+		"multiplier": 5,
+		"max": 5,
+		"bonus": false
+	},
+	{
+		"name": "opencoreprocessor",
+		"display": "Open Core Processor",
+		"multiplier": 10,
+		"max": 10,
+		"bonus": false
+	},
+	{
+		"name": "retrieveaichip",
+		"display": "Retrieve AI Chip",
+		"multiplier": 5,
+		"max": 5,
+		"bonus": false
+	},
+	{
+		"name": "leaveaichip",
+		"display": "Leave AI Chip on Station",
+		"multiplier": 0,
+		"max": 0,
+		"bonus": false
+	},
+	{
+		"name": "incinerateaichip",
+		"display": "Incinerate AI Chip",
+		"multiplier": 15,
+		"max": 15,
+		"bonus": false
+	},
+	{
+		"name": "returntoearth",
+		"display": "Return to Earth",
+		"multiplier": 10,
+		"max": 10,
+		"bonus": false
+	},
+	{
+		"name": "infectearth",
+		"display": "Infect Earth with Evil AI Chip",
+		"multiplier": -10,
+		"max": -10,
+		"bonus": false
+	}
+],
+"results": [
+	{
+		"team": 1,
+		"name": "TBS (To Be Scared)",
+		"gametime": "10:45 am",
+		"members": ["Lou N", "Michael G", "Amanda M", "Frank T", "Steve B"],
+		"timeremaining": "03:16",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	},
+	{
+		"team": 2,
+		"name": "Travelers",
+		"gametime": "11:30 am",
+		"members": ["Frank F", "Simon H", "Sean M", "Kashif H", "Nick O", "Jose F"],
+		"timeremaining": "05:57",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	},
+	{
+		"team": 3,
+		"name": "Stayin' alive",
+		"gametime": "12:15 pm",
+		"members": ["Mariya K", "Mahrie B", "Patricia F", "Irina F", "Nelish L", "Brian K"],
+		"timeremaining": "06:25",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	},
+	{
+		"team": 4,
+		"name": "Better Dead than Zed",
+		"gametime": "01:45 pm",
+		"members": ["Kamran A", "Andre F", "Sarah W", "Tina L", "Kaitlyn F", "Alex B"],
+		"timeremaining": "03:20",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	},
+	{
+		"team": 5,
+		"name": "under-appreciated",
+		"gametime": "02:30 pm",
+		"members": ["Leann V", "Nathan D", "Hitesh M", "Warren G", "Mohamad M", "Ozayr A"],
+		"timeremaining": "01:04",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	},
+	{
+		"team": 6,
+		"name": "Avengers",
+		"gametime": "03:15 pm",
+		"members": ["Mark A", "Temu D", "Jennifer S", "Robin A", "Luis L"],
+		"timeremaining": "00:00",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	},
+	{
+		"team": 8,
+		"name": "Awesome Possum",
+		"gametime": "04:45 pm",
+		"members": ["Eric S", "Kelvin H", "Richard G", "Mary G", "Muhammad A", "Daniel S"],
+		"timeremaining": "01:00",
+		"score": {
+			"oxygen": 1,
+			"hatchcode": 1,
+			"openhatch": 1,
+			"communicationlink": 1,
+			"pigpencode": 1,
+			"decodepigpen": 1,
+			"reenableshields": 1,
+			"accesscoreprocessorkey": 1,
+			"opencoreprocessor": 1,
+			"retrieveaichip": 1,
+			"leaveaichip": 0,
+			"incinerateaichip": 0,
+			"returntoearth": 1,
+			"infectearth": 1
+		},
+		"total": 75,
+		"percentage": 75
+	}
+]
+}

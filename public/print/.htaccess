@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "BioCoreTek"
+AuthUserFile /services/webpages/b/i/biocoretek.com/public/print/.htpasswd
+Require valid-user
