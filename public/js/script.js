@@ -98,7 +98,7 @@ var realEl = $("#real");
 var canvasEl = null;
 //var minTimeDraw = 900;
 // now that results are up, use much lower glitch rate so people can read it
-var minTimeDraw = 2000;
+var minTimeDraw = 8000;
 var maxTimeDraw = 9000;
 var minTimeUndraw = 50;
 var maxTimeundraw = 300;
